@@ -3,7 +3,6 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.ksp)
-    alias(libs.plugins.room)
     id("kotlin-parcelize")
     kotlin("plugin.serialization") version "1.8.0"
 }
@@ -41,9 +40,6 @@ android {
     buildFeatures {
         compose = true
     }
-    room {
-        schemaDirectory("$projectDir/schemas")
-    }
     packagingOptions {
         exclude("META-INF/androidx.emoji2_emoji2.version")
     }
@@ -73,9 +69,6 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.kotlinx.serialization.json)
-    implementation(libs.androidx.room.runtime)
-    ksp(libs.androidx.room.compiler)
-    implementation(libs.sqlite.bundled)
     implementation(libs.coil.compose)
     implementation(libs.androidx.animation)
     implementation(libs.androidx.foundation)
