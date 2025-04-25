@@ -15,7 +15,7 @@ An Android app to browse and explore manga content. Built using Jetpack Compose,
 
 ## 📸 Screenshots
 
-| Sign In | Home | Details | Genres |
+| Sign In | Home | Details | Face Detect |
 |--------|------|---------|--------|
 | ![Sign In](login.jpg) | ![Home](home_screen.jpg) | ![Details](manga_description.jpg) | ![Face Detect](face_detect.jpg) |
 
